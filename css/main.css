@@ -1,0 +1,40 @@
+.header {
+    border-bottom: 1px solid #ddd;
+}
+
+.header .header_wrap {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    width: 200px;
+}
+
+.header .gnb ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .gnb ul li {
+    position: relative;
+}
+
+.header .gnb ul li:hover::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d93746;
+}
+
+.header .login {
+    display: flex;
+    gap: 15px;
+    width: 200px;
+}
