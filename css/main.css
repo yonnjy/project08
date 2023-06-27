@@ -1,5 +1,9 @@
 .header {
+    position: sticky;
+    top: 0;
+    background: #fff;
     border-bottom: 1px solid #ddd;
+    z-index: 1000;
 }
 
 .header .header_wrap {
@@ -7,10 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header h1 {
-    width: 200px;
 }
 
 .header .gnb ul {
@@ -36,5 +36,228 @@
 .header .login {
     display: flex;
     gap: 15px;
-    width: 200px;
+}
+
+/* main_visual */
+.main_vi .main_slide .itm {
+    position: relative;
+    height: calc(700px - 80px);
+}
+
+.main_vi .main_slide .itm01 {
+    background: url(../images/main_vi01.jpg)no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #aaa;
+}
+
+.main_vi .main_slide .itm02 {
+    background: url(../images/main_vi02.jpg)no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #aaa;
+}
+
+.main_vi .main_slide .itm03 {
+    background: url(../images/main_vi03.jpg)no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #aaa;
+}
+
+.main_vi .main_slide .itm04 {
+    background: url(../images/main_vi04.jpg)no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #777;
+}
+
+.main_vi .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.main_vi .slogan strong {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.main_vi .slogan p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main_vi .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_vi .slick-dots>li {
+    display: inline-block;
+}
+
+.main_vi .slick-dots>li button {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.main_vi .slick-dots>li:hover button {
+    background: #fff;
+}
+
+.main_vi .slick-dots>li~li button {
+    margin: 0 0 0 6px;
+}
+
+.main_vi .slick-dots>li.slick-active button {
+    background: #fff;
+}
+
+/* main_new_product */
+.main_pro .inner {
+    position: relative;
+}
+
+.main_pro .btn {
+    position: absolute;
+    top: -50px;
+    right: -15px;
+    transform: translate(-50%, 0);
+}
+
+.main_pro .pro_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.main_pro .pro_list>li {
+    border: 1px solid #eee;
+}
+
+.main_pro .pro_list>li>a {
+    display: block;
+    padding: 15px 15px;
+}
+
+.main_pro .pro_list .img_box {
+    margin: 0 0 20px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.main_pro .pro_list strong {
+    display: block;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+}
+
+.main_pro .pro_list p {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+.main_pro .pro_list span {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.main_pro .hash {
+    display: flex;
+}
+
+.main_pro .hash>li {
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 30px 0 50px 0;
+    color: #ccc;
+    background: #444;
+}
+
+.footer .footer_list {
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #555;
+}
+
+.footer .footer_list ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer .footer_list li {
+    position: relative;
+}
+
+.footer .footer_list li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 8px;
+    background: #555;
+}
+
+.footer .footer_list li a {
+    display: block;
+    line-height: 50px;
+}
+
+.footer .footer_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_info ul {
+    display: flex;
+    gap: 20px;
+    margin: 0 0 10px 0;
+}
+
+.footer .footer_info li {
+    position: relative;
+}
+
+.footer .footer_info li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translate(0, -50%);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #555;
+}
+
+.footer .footer_info strong {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.footer .footer_info span {
+    font-size: 12px;
+    font-weight: 300;
 }

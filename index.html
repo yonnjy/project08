@@ -6,7 +6,10 @@
     <title>삼천당제약</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
@@ -30,9 +33,9 @@
                     </ul>
                 </nav>
                 <ul class="login">
-                    <li><a href="">EN</a></li>
                     <li><a href="">로그인</a></li>
                     <li><a href="">회원가입</a></li>
+                    <li><a href="">EN</a></li>
                 </ul>
             </div>
         </header>
@@ -47,19 +50,19 @@
                             <p>실천하고 실현하는 도전정신으로 건강하고 풍요로운 내일을 만들어 가겠습니다.</p>
                         </div>
                     </div>
-                    <div class="itm itm01">
+                    <div class="itm itm02">
                         <div class="slogan">
                             <strong>Strong Challenge on Demand</strong>
                             <p>제약 선진기업으로 한발 앞서 미래를 대비하는 삼천당제약은 R&D와 선진 GMP 시설로 꾸준히 신제품 개발을 추진하고, 우수한 의약품 수출로 해외시장을 적극적으로 개척해 나가겠습니다.</p>
                         </div>
                     </div>
-                    <div class="itm itm01">
+                    <div class="itm itm03">
                         <div class="slogan">
                             <strong>함께하는 미래 SCD</strong>
                             <p>삼천당제약은 인류의 건강과 미래를 지켜나가기 위해 연구개발을 통한 글로벌 경쟁력을 갖추고, 고객으로부터 신뢰와 사랑을 받는 기업이 되도록 최선을 다하겠습니다.</p>
                         </div>
                     </div>
-                    <div class="itm itm01">
+                    <div class="itm itm04">
                         <div class="slogan">
                             <strong>VISION Replace</strong>
                             <p>책임감, 도전의식, 변화주도, 리더십, 성과지향, 협업, 전문성에 중점을 둔 기업이 되도록 노력하겠습니다.</p>
@@ -68,67 +71,91 @@
                 </div>
             </section>
             <!-- main_new_product -->
-            <section class="main_pro">
+            <section class="main_pro sec">
                 <div class="tit">
                     <h2>NEW PRODUCT</h2>
-                    <p>우수 약품의 개발, 생산으로 국민건강 증진에 기여하는 삼천당제약의 신제품!</p>
+                    <p>우수 약품의 개발, 생산으로 국민건강 증진에 기여하는 삼천당제약의 신제품&#33;</p>
                 </div>
                 <div class="inner">
-                    <ul>
+                    <div class="btn">
+                        <a href="">&#43; 더보기</a>
+                    </div>
+                    <ul class="pro_list">
                         <li>
                             <a href="">
-                                <img src="./images/new_itm01.png" alt="디알클리어점안액 1.0% (일회용)">
-                                <strong>디알클리어점안액 1.0% (일회용)</strong>
-                                <span>0.45mL * 60관</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm01.png" alt="디알클리어점안액 1.0%">
+                                </div>
+                                <p>디알클리어점안액 1.0&#37;</p>
+                                <span>0.45mL &#47; 60관</span>
+                                <ul class="hash">
+                                    <li>일회용</li>
+                                    <li>일반의약품</li>
+                                    <li>안과용제</li>
+                                </ul>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm02.png" alt="에스솝점안액 (일회용)">
-                                <strong>에스솝점안액 (일회용)</strong>
-                                <span>0.25mL * 10관</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm02.png" alt="에스솝점안액">
+                                </div>
+                                <p>에스솝점안액</p>
+                                <span>0.25mL &#47; 10관</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm03.png" alt="에스포린점안액 (일회용)">
-                                <strong>에스포린점안액 (일회용)</strong>
-                                <span>0.4mL * 30관</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm03.png" alt="에스포린점안액">
+                                </div>
+                                <p>에스포린점안액</p>
+                                <span>0.4mL &#47; 30관</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm04.png" alt="올로텐하이 0.7% 점안액 (일회용)">
-                                <strong>올로텐하이 0.7% 점안액 (일회용)</strong>
-                                <span>0.3ml * 12관</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm04.png" alt="올로텐하이 0.7% 점안액">
+                                </div>
+                                <p>올로텐하이 0.7&#37; 점안액</p>
+                                <span>0.3ml &#47; 12관</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm05.png" alt="나리넥스점비액 (다회용)">
-                                <strong>나리넥스점비액 (다회용)</strong>
-                                <span>140doses</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm05.png" alt="나리넥스점비액">
+                                </div>
+                                <p>나리넥스점비액</p>
+                                <span>140doses &#47; 1병</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm06.png" alt="클리드 점안액 (다회용)">
-                                <strong>클리드 점안액 (다회용)</strong>
-                                <span>100mL</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm06.png" alt="클리드 점안액">
+                                </div>
+                                <p>클리드 점안액</p>
+                                <span>100mL &#47; 1병</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm07.png" alt="아이리스 점안액 (다회용)">
-                                <strong>아이리스 점안액 (다회용)</strong>
-                                <span>15ml</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm07.png" alt="아이리스 점안액">
+                                </div>
+                                <p>아이리스 점안액</p>
+                                <span>15ml &#47; 1병</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/new_itm08.png" alt="하메론피점안액 0.3% (다회용)">
-                                <strong>하메론피점안액 0.3% (다회용)</strong>
-                                <span>5mL</span>
+                                <div class="img_box">
+                                    <img src="./images/new_itm08.png" alt="하메론피점안액 0.3%">
+                                </div>
+                                <p>하메론피점안액 0.3&#37;</p>
+                                <span>5mL &#47; 1병</span>
                             </a>
                         </li>
                     </ul>
@@ -141,26 +168,29 @@
                 <div class="inner">
                     <div class="footer_list">
                         <ul>
-                            <li><a href="">사이트맵</a></li>
+                            <li><a href="">사이트 맵</a></li>
                             <li><a href="">문의사항</a></li>
                             <li class="st"><a href="">개인정보취급방침</a></li>
                             <li><a href="">오시는길</a></li>
                             <li><a href="">ISO 37301</a></li>
-                            <li><a href="">공장/지점</a></li>
+                            <li><a href="">공장 / 지점</a></li>
                         </ul>
                     </div>
                     <div class="footer_info">
-                        <div class="add_info">
-                            <strong>서울특별시 서초구 효령로 351 (06643)</strong>
+                        <div class="info_add">
                             <ul>
-                                <li>대표전화 : <a href="" class="st">02-2046-1100</a></li>
-                                <li>팩스 : <a href="" class="st">02-2046-1101</a></li>
-                                <li>소비자상담전화 : <a href="" class="st">1522-3846</a></li>
+                                <li>대표전화 : <a href="Tel : 02-2046-1100" class="st">02-2046-1100</a></li>
+                                <li>팩스 : <a href="Tel : 02-2046-1101" class="st">02-2046-1101</a></li>
+                                <li>소비자상담전화 : <a href="Tel : 1522-3846" class="st">1522-3846</a></li>
                             </ul>
+                            <strong>서울특별시 서초구 효령로 351 (06643)</strong>
+                            <span>&copy;2023 by SCD Pharm. AllRights Reserved.</span>
                         </div>
-                        <span class="copyright">
-                            &copy;2023 by SCD Pharm. AllRights Reserved.
-                        </span>
+                        <div class="info_logo">
+                            <a href="">
+                                <img src="./images/logo_f.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </address>

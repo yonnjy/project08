@@ -1,6 +1,5 @@
 $(function () {
-
-    $('.main_slide').slick({
+    $('.main_vi .main_slide').slick({
         arrows: false,
         dots: true,
         fade: true,
