@@ -7,8 +7,9 @@
     <title>오시는길</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sub01.css">
+
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
@@ -108,7 +109,7 @@
                                 <!-- * 카카오맵 - 지도퍼가기 -->
                                 <!-- 1. 지도 노드 -->
                                 <div id="daumRoughmapContainer1688019139112"
-                                    class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                    class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
     
                                 <!--
                                 2. 설치 스크립트
@@ -122,7 +123,7 @@
                                     new daum.roughmap.Lander({
                                         "timestamp": "1688019139112",
                                         "key": "2fcw2",
-                                        "mapWidth": "760",
+                                        // "mapWidth": "760",
                                         "mapHeight": "350"
                                     }).render();
                                 </script>
@@ -177,6 +178,11 @@
                 </div>
             </address>
         </footer>
+        <div class="btn_list">
+            <div class="hamburger">
+                <i class="xi-bars"></i>
+            </div>
+        </div>
     </div>
 </body>
 

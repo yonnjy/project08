@@ -1,4 +1,15 @@
 $(function () {
+    $('.hamburger').on('click', function () {
+        $(this).toggleClass('on');
+        $('.gnb').toggleClass('on');
+    });
+
+    $('.gnb>ul>li>a').on('click', function (e) {
+        e.preventDefault();
+        $(this).next().stop().slideDown();
+        $(this).parent().siblings().find('.snb').stop().slideUp();
+    });
+    
     $('.main_slide').on('init afterChange', function () {
         const current = $('.main_slide .slick-current');
         current.addClass('on').siblings().removeClass('on');
@@ -7,7 +18,6 @@ $(function () {
     $('.main_vi .main_slide').slick({
         arrows: false,
         dots: true,
-        // fade: true,
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1000,
