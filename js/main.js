@@ -1,15 +1,29 @@
 $(function () {
-    $('.hamburger').on('click', function () {
-        $(this).toggleClass('on');
-        $('.gnb').toggleClass('on');
+    // $('.hamburger').on('click', function () {
+    //     $(this).toggleClass('on');
+    //     $('.gnb').toggleClass('on');
+    // });
+
+    // $('.gnb>ul>li>a').on('click', function (e) {
+    //     if ($('.gnb').hasClass('on')) {
+    //         e.preventDefault();
+    //         $(this)
+    //             .next()
+    //             .stop()
+    //             .slideToggle();
+    //         }
+    // });
+
+    $(window).on('resize', function () {
+        $('.gnb').removeClass('on');
     });
 
-    $('.gnb>ul>li>a').on('click', function (e) {
-        e.preventDefault();
-        $(this).next().stop().slideDown();
-        $(this).parent().siblings().find('.snb').stop().slideUp();
-    });
-    
+    $('.gnb').on('wheel', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+        }
+    })
+
     $('.main_slide').on('init afterChange', function () {
         const current = $('.main_slide .slick-current');
         current.addClass('on').siblings().removeClass('on');

@@ -15,6 +15,7 @@
 }
 
 .header h1 {
+    flex: 0 0 170px;
     z-index: 1004;
 }
 
@@ -27,7 +28,6 @@
     height: 0;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    transition: 0.1s;
     z-index: 999;
 }
 
@@ -54,8 +54,6 @@
     width: 0;
     height: 0;
     background: #d93746;
-    opacity: 0;
-    transition: 0.3s;
 }
 
 .header .gnb>ul>li:hover::after {
@@ -74,24 +72,22 @@
 /* sub */
 .header .gnb .sub {
     position: absolute;
-    overflow: hidden;
+    visibility: hidden;
     top: 90px;
     left: 50%;
     height: 0;
     text-align: center;
     white-space: nowrap;
     transform: translate(-50%, 0);
-    transition: 0.3s;
     z-index: 999;
 }
 
 .header .gnb:hover .sub {
-    overflow: visible;
+    visibility: visible;
 }
 
 .header .gnb .sub>li {
     position: relative;
-    line-height: 30px;
 }
 
 .header .gnb .sub>li::before {
@@ -103,7 +99,7 @@
     width: 0;
     height: 1px;
     background: #d93746;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .header .gnb .sub>li:hover::before {
@@ -118,7 +114,9 @@
 }
 
 .header .gnb .sub>li>a {
+    display: block;
     font-size: 14px;
+    line-height: 30px;
 }
 
 .header .login {
@@ -484,31 +482,16 @@
     .header .gnb.on {
         inset: 0 auto 0 0;
     }
-    .header .gnb::before {
+
+    .header .gnb:hover::before {
         display: none;
     }
 
     .header .gnb>ul {
         flex-direction: column;
-        gap: 0;
-        padding: 150px 30px 0 30px;
+        gap: 45px;
     }
 
-    .header .gnb>ul>li>a {
-        color: #444;
-    }
-
-    .header .gnb>ul>li {
-        line-height: 40px;
-    }
-
-    .header .gnb>ul>li::after {
-        display: none;
-    }
-
-    .header .gnb:hover .sub {
-        overflow: hidden;
-    }
 
     .header .login {
         display: none;
